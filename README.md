@@ -20,4 +20,8 @@ On git the naming convention of the config files is:
 ## Note that Spring Cloud prefers yml against properties.
 
 ## If you download this project, whithout running any client app, you can test the config by requesting:
-## http://localhost:8001/first-client/abc
+
+http://localhost:8001/first-client/abc
+
+## There should be multiple config server instance running, behind the load balancer to handle fall back.
+## any config returned by the config server will overwrite your local settings
