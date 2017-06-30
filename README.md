@@ -9,13 +9,13 @@ For example, when a client named first-client starts up, the client checks its b
 
 Then the client makes a call to the config server. The follows the following rule:
 
-http://<server-name>:<port>/<client-app-name>/<profile>
+http://'<server-name>':'<port>'/'<client-app-name>'/'<profile>'
 
 When the config server receives the request, it actually goes to git to load the config files and return it/them to the client.
 
 On git the naming convention of the config files is:
 
-<client-app-name>-<profile>.yml
+'<client-app-name>'-'<profile>'.yml
 
 ## Note that Spring Cloud prefers yml against properties.
 
