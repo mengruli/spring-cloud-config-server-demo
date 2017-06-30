@@ -1,0 +1,20 @@
+---
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/mengruli/JEENotes
+          searchPaths: ConfigData
+
+server:
+  port: 8001
+
+# yml file can hold multple profiles in a signle file
+# just divide them by ---
+
+# name convention for config file name
+# <app name>-<profile>
+# app-name and profile are defined by the client bootstrap yml
+# when the client starts up, it automatically makes an request to
+# <config-server>:<port>/<app-name>/<profile> to load the config file
