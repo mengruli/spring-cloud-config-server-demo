@@ -15,7 +15,7 @@ When the config server receives the request, it actually goes to git to load the
 
 On git the naming convention of the config files is:
 
-'<client-app-name>'-'<profile>'.yml
+\<client-app-name>-\<profile>.yml
 
 ## Note that Spring Cloud prefers yml against properties.
 
